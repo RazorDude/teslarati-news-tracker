@@ -1,0 +1,49 @@
+#errors-container {
+  width: 500px;
+  height: 20px;
+  position: fixed;
+}
+
+#news-container {
+  width: 500px;
+}
+
+.news-item {
+  width: 100%;
+  height: 160px;
+  padding: 5px 0px;
+  cursor: pointer;
+}
+
+.new-item-icon {
+  position: absolute;
+  margin-top: -10px;
+  margin-left: -6px;
+  width: 25px;
+  height: 25px;
+  background-image: url(/newItemIcon.svg);
+}
+
+.news-item-image, .news-item-data-container {
+  display: inline-block;
+  width: 245px;
+  height: 150px;
+}
+.news-item-data-container {
+  padding-left: 5px;
+  vertical-align: top;
+}
+
+.news-item-title, .news-item-text {
+  width: 250px;
+  word-wrap: break-word;
+  color: #555;
+}
+.news-item-title {
+  font-size: 15px;
+  font-weight: bold;
+}
+.news-item-text {
+  margin-top: 10px;
+  font-size: 13px;
+}
