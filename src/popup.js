@@ -24,6 +24,9 @@ window.onload = async () => {
   } else {
     newsContainer.innerHTML = ''
     currentNews.items.forEach((item) => {
+      if (!item) {
+        return
+      }
       newsContainer.innerHTML +=
         `<div class='news-item' link='${item.link}'>` +
           (item.new ? `<div class='new-item-icon'></div>` : '') +
